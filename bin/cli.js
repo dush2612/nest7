@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const { spawn } = require('child_process');
+const { execSync } = require('child_process');
 
 const runCommand = (command) => {
   try {
-    spawn(`${command}`, { stdio: 'inherit' });
+    execSync(`${command}`, { stdio: 'inherit' });
   } catch (e) {
     console.log(`Failed to execute ${command}`, e);
     return false;

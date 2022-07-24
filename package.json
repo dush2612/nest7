@@ -1,9 +1,10 @@
 {
   "name": "my-nest-muraly1",
-  "version": "1.4.2",
+  "version": "1.6.2",
   "description": "",
   "author": "",
   "private": false,
+  "bin": "./bin/cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/dush2612/nest7"
